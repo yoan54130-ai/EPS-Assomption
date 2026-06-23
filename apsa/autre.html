@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Autre — Projets EPS Assomption Bondy</title>
+  <link rel="stylesheet" href="../assets/style.css" />
+</head>
+<body>
+  <script>window.SITE_DEPTH = 1;</script>
+
+  <header class="site-header">
+    <div class="site-header-inner">
+      <div class="brand">
+        <img src="../assets/logo.png" alt="Logo Assomption Bondy" />
+        <div class="brand-divider"></div>
+        <div class="brand-text">Projets EPS<small>Assomption Bondy</small></div>
+      </div>
+      <nav class="main-nav">
+        <a href="../index.html">Accueil</a>
+        <a href="step.html">Step</a>
+        <a href="natation.html">Natation</a>
+        <a href="athletisme.html">Athlétisme</a>
+        <a href="gym-danse.html">Gym / Danse</a>
+        <a href="collectif.html">Collectifs</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero" style="padding-bottom:1.5rem;">
+    <span class="hero-eyebrow"><span class="dot"></span> APSA</span>
+    <h1>📁 Autre</h1>
+    <p class="lead">Projets transversaux ou ne correspondant pas encore à une APSA listée.</p>
+  </section>
+
+  <div class="section-head">
+    <h2>Projets</h2>
+    <button class="fab-add" onclick="openAddModal()">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><path d="M12 5v14M5 12h14"/></svg>
+      Ajouter un projet
+    </button>
+  </div>
+
+  <main class="grid" id="grid-apsa"></main>
+
+  <footer class="site-footer">
+    <div class="site-footer-inner">
+      <div class="footer-brand">
+        <img src="../assets/logo.png" alt="Assomption Bondy" />
+        <p>Lycée de l'Assomption, Bondy — Éducation Physique et Sportive</p>
+      </div>
+      <p>Site statique hébergé sur GitHub Pages</p>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" id="add-modal">
+    <div class="modal">
+      <h3>Ajouter un nouveau projet</h3>
+      <div class="hint">
+        Ce site est statique : remplissez le formulaire, copiez le bloc généré dans <code>projets.json</code> à la racine du dépôt, juste après une accolade fermante <code>},</code>.
+      </div>
+      <div class="field">
+        <label>Titre du projet</label>
+        <input type="text" id="f-titre" placeholder="ex: Chrono Step Cardio">
+      </div>
+      <div class="field">
+        <label>APSA</label>
+        <select id="f-apsa">
+          <option value="step">Step</option>
+          <option value="natation">Natation</option>
+          <option value="athletisme">Athlétisme</option>
+          <option value="gym-danse">Gym / Danse</option>
+          <option value="collectif">Sports collectifs</option>
+          <option value="autre" selected>Autre</option>
+        </select>
+      </div>
+      <div class="field">
+        <label>Niveau (optionnel)</label>
+        <input type="text" id="f-niveau" placeholder="ex: Bac Pro, 3ème, Terminale…">
+      </div>
+      <div class="field">
+        <label>Type d'outil (optionnel)</label>
+        <input type="text" id="f-outil" placeholder="ex: App web, Fiche PDF, Artifact…">
+      </div>
+      <div class="field">
+        <label>Description</label>
+        <textarea id="f-desc" placeholder="Décrivez brièvement le projet…"></textarea>
+      </div>
+      <div class="field">
+        <label>Lien (URL)</label>
+        <input type="url" id="f-url" placeholder="https://…">
+      </div>
+      <div class="field">
+        <label>Emoji icône (optionnel)</label>
+        <input type="text" id="f-emoji" placeholder="🏃" maxlength="2">
+      </div>
+      <div id="json-output" style="display:none;">
+        <label style="font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft); display:block; margin-bottom:.4rem;">À copier dans projets.json</label>
+        <pre style="background:var(--ink); color:var(--cream); padding:1rem; border-radius:8px; font-size:.78rem; overflow-x:auto; white-space:pre-wrap;"></pre>
+      </div>
+      <div class="modal-actions">
+        <button class="btn-ghost" onclick="closeAddModal()">Fermer</button>
+        <button class="btn-solid" onclick="handleAddSubmit()">Générer le bloc JSON</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../js/projets.js"></script>
+  <script>
+    document.getElementById("f-apsa").value = "autre";
+    renderGrid("grid-apsa", "autre");
+  </script>
+</body>
+</html>
