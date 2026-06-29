@@ -1,0 +1,82 @@
+[
+  {
+    "id": "step-carnet",
+    "titre": "Step Carnet",
+    "apsa": "step",
+    "niveau": "Bac Pro",
+    "outil": "App web · IA",
+    "emoji": "🏃",
+    "description": "Carnet numérique de séances pour le Baccalauréat Professionnel EPS. Les élèves remplissent leurs fiches, scannent leur carnet papier grâce à l'IA, et le professeur suit l'ensemble des données.",
+    "url": "https://yoan54130-ai.github.io/step-carnet/"
+  },
+  {
+    "id": "projet-2",
+    "titre": "Projet 2 (à compléter)",
+    "apsa": "autre",
+    "niveau": "",
+    "outil": "Artifact Claude",
+    "emoji": "📋",
+    "description": "Description à renseigner — dites à Claude de quoi parle ce projet pour qu'il mette à jour cette fiche.",
+    "url": "https://claude.ai/public/artifacts/f57d91b6-fdf6-407f-9947-df8b9c4bd327"
+  },
+  {
+    "id": "projet-3",
+    "titre": "Projet 3 (à compléter)",
+    "apsa": "autre",
+    "niveau": "",
+    "outil": "Artifact Claude",
+    "emoji": "🎯",
+    "description": "Description à renseigner — dites à Claude de quoi parle ce projet pour qu'il mette à jour cette fiche.",
+    "url": "https://claude.ai/public/artifacts/a5cdc610-d411-4d76-9a97-fc85d1de66f1"
+  },
+  {
+    "id": "boxe-francaise-assaut",
+    "titre": "Boxe Française — Assaut",
+    "apsa": "combat",
+    "niveau": "Collège",
+    "outil": "App web",
+    "emoji": "🥊",
+    "description": "Répertoire technique du cycle de boxe française en assaut, feuille d'arbitrage interactive pour juger un assaut en direct, et générateur de rotation des rôles (tireurs, arbitre, juges, chronométreur).",
+    "url": "https://bf-assomption.netlify.app/#accueil"
+  },
+  {
+    "id": "co-assomption",
+    "titre": "Balise — Course d'orientation",
+    "apsa": "orientation",
+    "niveau": "Collège & Lycée",
+    "outil": "App web · temps réel",
+    "emoji": "🧭",
+    "description": "Outil professeur pour préparer et piloter des séances de course d'orientation : création de classes, placement des balises sur carte ou par capture GPS terrain, chronométrage et calcul automatique du degré d'acquisition, suivi en direct des élèves par QR code.",
+    "url": "https://co-assomption.netlify.app/"
+  },
+  {
+    "id": "balise-eleve",
+    "titre": "Balise — Mon parcours (élève)",
+    "apsa": "orientation",
+    "niveau": "Collège & Lycée",
+    "outil": "App web · géolocalisation",
+    "emoji": "📡",
+    "description": "Page élève associée à l'outil Balise : chaque élève scanne le QR code de la séance et valide ses balises au fur et à mesure de son parcours, sa position n'étant transmise qu'au moment de la validation.",
+    "url": "https://balise-eleve.netlify.app/"
+  },
+  {
+    "id": "eps-notation",
+    "titre": "EPS Notation — Carnet d'évaluation Bac",
+    "apsa": "autre",
+    "niveau": "Lycée · Bac",
+    "outil": "App web",
+    "emoji": "📊",
+    "description": "Application de notation EPS par degrés d'acquisition, fidèle aux référentiels du Baccalauréat, pour suivre et noter les élèves quelle que soit l'APSA évaluée.",
+    "url": "https://eps-notation-assomption.netlify.app/"
+  },
+  {
+    "id": "tournament-master",
+    "titre": "TournamentMaster — Gestion de tournoi",
+    "apsa": "collectif",
+    "niveau": "Collège & Lycée",
+    "outil": "App web",
+    "emoji": "🏸",
+    "description": "Générateur et pilote de tournois multi-formats (poules, ligue, interclub) : répartition automatique des joueurs en évitant les doublons d'établissement, planning optimisé, classement en temps réel, phases d'élimination directe ou double élimination, et mode consolante.",
+    "url": "https://yoan54130-ai.github.io/Gestion-de-tournoi/"
+  }
+]
