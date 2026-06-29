@@ -17,6 +17,8 @@
   --gold:       #d9a430;
   --blue:       #2f8fc4;
   --pink:       #d6478a;
+  --red:        #c0392b;
+  --brown:      #8a6d3b;
 
   --surface:    #ffffff;
   --shadow:     0 4px 24px rgba(31,36,24,.06);
@@ -278,6 +280,8 @@ nav.main-nav a.active::after {
 .apsa-pill[data-apsa="athletisme"]  { border-top: 3px solid var(--gold); }
 .apsa-pill[data-apsa="gym-danse"]   { border-top: 3px solid var(--pink); }
 .apsa-pill[data-apsa="collectif"]   { border-top: 3px solid var(--green-dark); }
+.apsa-pill[data-apsa="combat"]      { border-top: 3px solid var(--red); }
+.apsa-pill[data-apsa="orientation"] { border-top: 3px solid var(--brown); }
 .apsa-pill[data-apsa="autre"]       { border-top: 3px solid var(--ink-soft); }
 
 /* ── SECTION TITLE ──────────────────────────────────────── */

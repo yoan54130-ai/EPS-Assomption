@@ -9,6 +9,8 @@ const APSA_META = {
   athletisme:  { label: "Athlétisme",        icon: "🏟️", grad: ["#fff8e1", "#ffecb3"] },
   "gym-danse": { label: "Gym / Danse",       icon: "🤸", grad: ["#fce4ec", "#f8bbd0"] },
   collectif:   { label: "Sports collectifs", icon: "🤾", grad: ["#e8f5e9", "#a5d6a7"] },
+  combat:      { label: "Sports de combat",  icon: "🥊", grad: ["#fdecea", "#f5c6c0"] },
+  orientation: { label: "Course d'orientation", icon: "🧭", grad: ["#f1ebe0", "#e0d3ba"] },
   autre:       { label: "Autre",             icon: "📁", grad: ["#eceff1", "#cfd8dc"] }
 };
 

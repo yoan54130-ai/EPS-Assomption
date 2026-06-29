@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Step — Projets EPS Assomption Bondy</title>
+  <title>Course d'orientation — Projets EPS Assomption Bondy</title>
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
@@ -18,21 +18,21 @@
       </div>
       <nav class="main-nav">
         <a href="../index.html">Accueil</a>
-        <a href="step.html" class="active">Step</a>
+        <a href="step.html">Step</a>
         <a href="natation.html">Natation</a>
         <a href="athletisme.html">Athlétisme</a>
         <a href="gym-danse.html">Gym / Danse</a>
         <a href="collectif.html">Collectifs</a>
         <a href="combat.html">Combat</a>
-        <a href="orientation.html">Orientation</a>
+        <a href="orientation.html" class="active">Orientation</a>
       </nav>
     </div>
   </header>
 
   <section class="hero" style="padding-bottom:1.5rem;">
     <span class="hero-eyebrow"><span class="dot"></span> APSA</span>
-    <h1>🏃 Step</h1>
-    <p class="lead">Carnets de séances, référentiels de thèmes et outils de suivi pour le Step.</p>
+    <h1>🧭 Course d'orientation</h1>
+    <p class="lead">Outils de pilotage de séance, balises géolocalisées et suivi de progression pour la course d'orientation.</p>
   </section>
 
   <div class="section-head">
@@ -68,13 +68,13 @@
       <div class="field">
         <label>APSA</label>
         <select id="f-apsa">
-          <option value="step" selected>Step</option>
+          <option value="step">Step</option>
           <option value="natation">Natation</option>
           <option value="athletisme">Athlétisme</option>
           <option value="gym-danse">Gym / Danse</option>
           <option value="collectif">Sports collectifs</option>
           <option value="combat">Sports de combat</option>
-          <option value="orientation">Course d'orientation</option>
+          <option value="orientation" selected>Course d'orientation</option>
           <option value="autre">Autre</option>
         </select>
       </div>
@@ -111,8 +111,8 @@
 
   <script src="../js/projets.js"></script>
   <script>
-    document.getElementById("f-apsa").value = "step";
-    renderGrid("grid-apsa", "step");
+    document.getElementById("f-apsa").value = "orientation";
+    renderGrid("grid-apsa", "orientation");
   </script>
 </body>
 </html>

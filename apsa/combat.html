@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Step — Projets EPS Assomption Bondy</title>
+  <title>Sports de combat — Projets EPS Assomption Bondy</title>
   <link rel="stylesheet" href="../assets/style.css" />
 </head>
 <body>
@@ -18,12 +18,12 @@
       </div>
       <nav class="main-nav">
         <a href="../index.html">Accueil</a>
-        <a href="step.html" class="active">Step</a>
+        <a href="step.html">Step</a>
         <a href="natation.html">Natation</a>
         <a href="athletisme.html">Athlétisme</a>
         <a href="gym-danse.html">Gym / Danse</a>
         <a href="collectif.html">Collectifs</a>
-        <a href="combat.html">Combat</a>
+        <a href="combat.html" class="active">Combat</a>
         <a href="orientation.html">Orientation</a>
       </nav>
     </div>
@@ -31,8 +31,8 @@
 
   <section class="hero" style="padding-bottom:1.5rem;">
     <span class="hero-eyebrow"><span class="dot"></span> APSA</span>
-    <h1>🏃 Step</h1>
-    <p class="lead">Carnets de séances, référentiels de thèmes et outils de suivi pour le Step.</p>
+    <h1>🥊 Sports de combat</h1>
+    <p class="lead">Répertoires techniques, feuilles d'arbitrage et outils pour les cycles de sports de combat et d'opposition.</p>
   </section>
 
   <div class="section-head">
@@ -68,12 +68,12 @@
       <div class="field">
         <label>APSA</label>
         <select id="f-apsa">
-          <option value="step" selected>Step</option>
+          <option value="step">Step</option>
           <option value="natation">Natation</option>
           <option value="athletisme">Athlétisme</option>
           <option value="gym-danse">Gym / Danse</option>
           <option value="collectif">Sports collectifs</option>
-          <option value="combat">Sports de combat</option>
+          <option value="combat" selected>Sports de combat</option>
           <option value="orientation">Course d'orientation</option>
           <option value="autre">Autre</option>
         </select>
@@ -111,8 +111,8 @@
 
   <script src="../js/projets.js"></script>
   <script>
-    document.getElementById("f-apsa").value = "step";
-    renderGrid("grid-apsa", "step");
+    document.getElementById("f-apsa").value = "combat";
+    renderGrid("grid-apsa", "combat");
   </script>
 </body>
 </html>
